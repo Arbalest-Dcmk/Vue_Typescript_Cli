@@ -72,7 +72,6 @@ module.exports = {
                     presets: ['env']
                 }
 
-
             },
             {
                 test: /\.tsx?$/,
