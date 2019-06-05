@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "cross-env config_env=dev  webpack-dev-server --inline --progress --config build/webpack.dev.config.js",
-    "prod": "cross-env config_env=prod webpack --progress --config build/webpack.prod.config.js"
+    "prod": "cross-env config_env=prod webpack --progress --config build/webpack.prod.config.js",
+    "lint": "eslint --ext .js,.vue,.ts src"
   },
   "repository": {
     "type": "git",
@@ -24,16 +25,27 @@
   "devDependencies": {
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
+    "@typescript-eslint/parser": "^1.9.0",
+    "@vue/eslint-config-standard": "^4.0.0",
+    "@vue/eslint-config-typescript": "^4.0.0",
+    "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.6",
     "cross-env": "^5.2.0",
     "css-loader": "^2.1.1",
+    "eslint": "^5.16.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-vue": "^5.2.2",
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.7.0",
     "node-sass": "^4.12.0",
     "postcss-loader": "^3.0.0",
     "sass-loader": "^7.1.0",
     "ts-loader": "^6.0.2",
-    "typescript": "^3.5.1",
+    "typescript": "^3.4.5",
     "vue-loader": "^15.7.0",
     "vue-style-loader": "^4.1.2",
     "vue-template-compiler": "^2.6.10",

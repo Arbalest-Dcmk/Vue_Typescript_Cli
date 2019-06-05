@@ -80,7 +80,10 @@ module.exports = {
                         loader: 'babel-loader'
                     },
                     {
-                        loader: 'ts-loader'
+                        loader: 'ts-loader',
+                        options: {
+                            appendTsSuffixTo:[/\.vue$/]//如果是vue文件内写ts，需要加，但是不推荐，最好是ts与vue分开，在vue文件中引入
+                        }
                     }
                 ]
             }
